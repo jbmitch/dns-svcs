@@ -11,17 +11,16 @@ subcollection: dns-svcs
 
 ---
 
-# Managing Resource records
+# Managing resource records
 {: #manage-resource-records}
 
 {{site.data.keyword.cloud}} DNS Services is in Experimental Release. At this time the service is available to whitelisted customers only.
 {: important}
 
-This section describes how to create various kinds of resource records, and perform other actions around resource records.
+You can create various kinds of resource records, and perform other actions, like listing, updating and deleting them as well.
 
-## Create resource record of type 'A'
+## Create a resource record of type 'A'
 {: #create-an-a-resource-record}
-
 
 **Request**
 
@@ -56,7 +55,7 @@ curl -X POST \
 }
 ```
 
-## Create resource record of type 'SRV'
+## Create a resource record of type 'SRV'
 {: #create-an-srv-resource-record}
 
 **Request**
@@ -100,7 +99,7 @@ curl -X POST \
 }
 ```
 
-## Create resource record of type 'TXT'
+## Create a resource record of type 'TXT'
 {: #create-a-txt-resource-record}
 
 **Request**
@@ -134,7 +133,7 @@ curl -X POST \
 }
 ```
 
-## Create resource record of type 'MX'
+## Create a resource record of type 'MX'
 {: #create-an-amx-resource-record}
 
 **Request**
@@ -170,7 +169,7 @@ curl -X POST \
 }
 ```
 
-## Create resource record of type 'PTR'
+## Create a resource record of type 'PTR'
 {: #create-a-ptr-resource-record}
 
 **Request**
@@ -204,7 +203,7 @@ curl -X POST \
 }
 ```
 
-## Create resource record of type 'CNAME'
+## Create a resource record of type 'CNAME'
 {: #create-a-cname-resource-record}
 
 **Request**
@@ -239,7 +238,7 @@ curl -X POST \
 ```
 
 
-## Create resource record of type 'AAAA'
+## Create a resource record of type 'AAAA'
 {: #create-an-aaaa-resource-record}
 
 **Request**
@@ -273,7 +272,7 @@ curl -X POST \
 }
 ```
 
-## Get a resource record
+## List a specific resource record
 {: #get-a-resource-record}
 
 **Request**
@@ -300,7 +299,7 @@ curl -X GET \
 }
 ```
 
-## List resource records
+## List all resource records
 {: #list-resource-records}
 
 **Request**
