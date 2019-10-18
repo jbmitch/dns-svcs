@@ -27,13 +27,13 @@ subcollection: dns-svcs
 {{site.data.keyword.cloud}} DNS Services is in Experimental Release. At this time the service is available to whitelisted customers only.
 {: important}
 
-You can control which VPC is permitted to perform name resolution for a DNS zone, by adding the VPC as a permitted network to the DNS Zone. The permitted network is used for Access Control mechanism.
+You can control which VPC is permitted to perform name resolution for a DNS zone, by adding the VPC as a permitted network. The permitted network is used for the Access Control mechanism.
 
 
 ## Create a permitted network
 {: #create-acl-entry}
 
-A DNS zone's initial state is `PENDING_NETWORK_ADD`, because its permitted network list is empty when the DNS zone is created. When a permitted network is added to the DNS zone's permitted networks, the state moves to `ACTIVE`.
+A DNS zone's initial state is `PENDING_NETWORK_ADD`, because its permitted network list is empty when the DNS zone is created. When a permitted network is added to the DNS zone's permitted networks, the state changes to `ACTIVE`.
 
 
 **Request**
@@ -71,10 +71,10 @@ curl -X POST \
 For future requests the ID in the response is referenced as `Permitted_Network_ID`.
 {:note}
 
-## Get a permitted network
+## List a specific permitted network
 {: #get-acl-entry}
 
-List a particular permitted network from your instance using the Permitted Network ID.
+List a specific permitted network from your instance using the Permitted Network ID.
 
 **Request**
 
@@ -101,7 +101,7 @@ curl -X GET \
 ## List permitted networks
 {: #list-acls}
 
-List all permitted network for your DNS zone.
+List all permitted networks for your DNS zone.
 
 **Request**
 
@@ -132,7 +132,7 @@ curl -X GET \
 ## Delete a permitted network
 {: #delete-acl-entry}
 
-Delete a particular permitted network from your instance. Unlink VPC from a zone.
+Delete a specific permitted network from your instance, and unlink VPC from a zone.
 
 **Request**
 
